@@ -1,0 +1,43 @@
+body {
+    background-color: #f4f1ea;
+    margin: 0;
+}
+    #cartucheras,
+    #lapices,
+    #pinceles,
+    #correctores {
+        display: none !important;
+    }
+
+    #cartucheras:target,
+    #lapices:target,
+    #pinceles:target,
+    #correctores:target {
+        display: block !important;
+    }
+
+    .btn-volver {
+        display: inline-block;
+        color: #891c20;
+        border: 2px solid #891c20;
+        padding: 10px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .btn-volver:hover {
+        background: #891c20;
+        color: #fff;
+    }
+
+    map area {
+        cursor: pointer;
+    }
+
+    map area:hover {
+        outline: 3px solid #e3d040;
+        outline-offset: 2px;
+    }
+

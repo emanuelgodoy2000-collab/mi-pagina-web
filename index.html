@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confecciones Emilce Multitienda</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+   <header>
+     <div class="logo">
+        <img src="imagenes/logitodelbuho.png" alt="Logo de Emilce">
+
+    <div class="texto-logo">
+        <h1>EMILCE</h1>
+        <p>CONFECCIONES</p>
+    </div>
+</div>
+
+        <input type="checkbox" id="menu-check" class="menu-checkbox">
+        
+        <label for="menu-check" class="menu-boton">
+            <span class="linea-barra"></span>
+            <span class="linea-barra"></span>
+            <span class="linea-barra"></span>
+        </label>
+
+        <nav class="menu-navegacion">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="productos.html">Productos</a>
+            <a href="promocion.html">Promoción</a>
+            <a href="nosotros.html">Nosotros</a>
+            
+        </nav>
+    </header>
+
+        
+        <section class="hero">
+            <div class="hero-contenido">
+                <h1>Estilo que<br>se siente</h1>
+                <p class="descripcion">Descubre nuestra colección y encuentra tu mejor versión con soluciones a tu medida.</p>
+                <a href="productos.html" class="btn-naranja">Ver productos</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="imagenes/b.png" alt="Búho Grande Confecciones Emilce">
+            </div>
+        </section>
+        <section class="productos-destacados">
+        <div class="contenedor">
+            <h2>PRODUCTOS DESTACADOS</h2>
+            <div class="linea-roja"></div>
+            
+            <div class="contenedor-servicios">
+                <article class="servicio-item">
+                    <div class="imagen-tarjeta-placeholder">
+                        <img src="imagenes/remerapy1.jpeg" alt="Prenda de Vestir" onerror="this.style.display='none';">
+                        <span>FOTO PRODUCTO</span>
+                    </div>
+                    <h3>Prendas de Vestir</h3>
+                    <p>Explorá nuestra colección exclusiva con telas de alta calidad, diseños modernos y confección impecable para toda la familia.</p>
+                    <a href="productos.html">SABER MÁS</a>
+                </article>
+
+                <article class="servicio-item">
+                    <div class="imagen-tarjeta-placeholder">
+                        <img src="imagenes/cadena.jpeg" alt="Accesorios" onerror="this.style.display='none';">
+                        <span>FOTO PRODUCTO</span>
+                    </div>
+                    <h3>Accesorios y Regalos</h3>
+                    <p>El complemento ideal para tu estilo diario o para sorprender a alguien especial. Variedad, color y excelentes precios.</p>
+                    <a href="productos.html">SABER MÁS</a>
+                </article>
+
+                <article class="servicio-item">
+                    <div class="imagen-tarjeta-placeholder">
+                        <img src="imagenes/lapicesdecolores.jpeg" alt="Artículos de Librería" onerror="this.style.display='none';">
+                        <span>FOTO PRODUCTO</span>
+                    </div>
+                    <h3>Librería y Belleza</h3>
+                    <p>Todo lo que la familia necesita en un solo lugar: útiles escolares, artículos de oficina, cosméticos y cuidado personal.</p>
+                    <a href="productos.html">SABER MÁS</a>
+                </article>
+            </div>
+            
+            <div class="boton-informacion-contenedor">
+                <a href="productos.html" class="btn-informacion-link">INFORMACIÓN</a>
+            </div>
+        </div>
+    </section>
+      
+
+  <section class="contacto-faq-contenedor">
+        <div class="contacto-faq-flex">
+            
+            <div class="columna-faq">
+                <h2 class="titulo-seccion-rojo">Preguntas Frecuentes</h2>
+                
+                <ul class="acordeon">
+                    <li>
+                        <input type="checkbox" id="faq-1" class="faq-check">
+                        <label for="faq-1" class="faq-label">¿Cuáles son los horarios de atención?</label>
+                        <div class="faq-content">
+                            <p>Estamos siempre listos para ayudar a nuestros vecinos en la comunidad, adaptándonos con flexibilidad para ofrecerte soluciones cuando más lo necesitas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="faq-2" class="faq-check">
+                        <label for="faq-2" class="faq-label">¿Hacen confecciones a medida o arreglos?</label>
+                        <div class="faq-content">
+                            <p>Sí, realizamos todo tipo de trabajos de corte, confección, moldería y arreglos de prendas con acabados sumamente profesionales.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="faq-3" class="faq-check">
+                        <label for="faq-3" class="faq-label">¿Qué tipos de productos ofrecen?</label>
+                        <div class="faq-content">
+                            <p>Somos una multitienda completa: aquí encontrarás desde prendas de vestir y uniformes hasta artículos de librería, belleza, regalos y accesorios familiares.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="columna-formulario">
+                <div class="contenedor-formulario">
+			<section id="formulario">
+                    <h2>Envíanos un mensaje</h2>
+			
+                    <p class="desc-form">¿Tienes alguna duda o quieres solicitar un presupuesto? Escríbenos directamente aquí.</p>
+                    
+                    <form action="https://formspree.io/f/mbdeynjg" method="POST">
+			
+                        <div class="grupo-campo">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="name" placeholder="Ej. María Pérez" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensaje">Tu Mensaje o Consulta:</label>
+                            <textarea id="mensaje" name="message" rows="5" placeholder="Escribe aquí los detalles de tu pedido..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-naranja-form">Enviar Mensaje</button>
+			
+                    </form>
+			</section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="contenido-footer">
+           
+            <div class="footer-columna">
+		<section id="footer">
+                <img src="imagenes/logo.png" alt="Logo Confecciones Emilce" class="logo-footer">
+                <h3>Confecciones Emilce</h3>
+                <p>Tu multitienda de confianza. Más que un comercio, una solución cercana para toda la familia.</p>
+            </div>
+
+            <div class="footer-columna">
+		 
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="promocion.html">Promoción</a></li>
+                 
+                </ul>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Contacto Directo y ubicación</h3>
+                               
+                <div class="contacto-redes">
+<a href="https://www.google.com/maps/place/Multi+Tienda+Emilce+Confecci%C3%B3nes/@-25.3631332,-57.6066747,19z/data=!4m10!1m2!2m1!1sEmilce+Multitienda!3m6!1s0x945da946618389f5:0xf6cf8e82e49d3101!8m2!3d-25.3631332!4d-57.6055482!15sChJFbWlsY2UgTXVsdGl0aWVuZGFaFCISZW1pbGNlIG11bHRpdGllbmRhkgEFc3RvcmWaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRHVjFVeFVuTldTR1JGVFVoR1RsRlhjRkZWV0ZKcVYyeGFUbUpXUlJBQuABAPoBBAgAEA8!16s%2Fg%2F11kq3349vr?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="red-item">
+    <svg class="icono-svg ic-gm" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </svg>
+    <span>Google Maps</span>
+</a>
+ <a href="https://www.tiktok.com/@emilce.burgos7" target="_blank" class="red-item">
+                        <svg class="icono-svg ic-tt" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+</svg>
+                        <span>Tik tok</span>
+
+                    <a href="https://wa.me/+595992584228" target="_blank" class="red-item">
+                        <svg class="icono-svg ic-wsp" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.106-2.883-6.968C16.583 1.94 14.11 1.918 11.48 1.918c-5.44 0-9.866 4.421-9.868 9.858-.001 1.836.5 3.621 1.45 5.2l-.187.684-.69 2.516 2.576-.675.686-.182zm13.124-5.12c-.228-.114-1.353-.667-1.562-.743-.21-.076-.361-.114-.513.114-.152.228-.59.743-.723.895-.133.152-.266.171-.495.057-.229-.114-.966-.356-1.84-1.137-.68-.606-1.138-1.355-1.272-1.583-.133-.228-.014-.351.1-.464.103-.101.228-.266.343-.4.114-.133.152-.228.228-.381.076-.152.038-.285-.019-.4-.057-.114-.513-1.236-.704-1.693-.186-.447-.37-.387-.513-.394-.133-.006-.285-.007-.437-.007-.152 0-.4.057-.61.285-.21.228-.8.78-.8 1.9s.816 2.213.93 2.365c.114.152 1.606 2.451 3.891 3.434.544.233 1.008.385 1.353.495.546.174 1.043.15 1.436.09.438-.067 1.353-.552 1.543-1.066.19-.514.19-.952.133-1.066-.056-.114-.21-.171-.438-.285z"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/emilcemultitienda/" target="_blank" class="red-item">
+                        <svg class="icono-svg ic-ig" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-derechos">
+            <p>&copy; 2026 Confecciones Emilce Multitienda - Todos los derechos reservados.</p>
+        </div>
+	</section>
+    </footer>
+</body>
+</html>

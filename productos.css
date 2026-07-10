@@ -1,0 +1,279 @@
+/* ==========================================
+   ESTILOS DE LA TABLA DE CATEGORÍAS
+   ========================================== */
+
+body {
+    background-color: #f4f1ea;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.seccion-categorias-tabla {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1100px;
+    overflow-x: auto; /* Permite scroll horizontal si se visualiza en celulares muy chicos */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tabla-categorias {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+/* Encabezado de la Tabla */
+.tabla-categorias thead tr {
+    background-color: #891C20; /* Tu color vino/granate principal */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tabla-categorias th {
+    padding: 18px 24px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Cuerpo de la Tabla */
+.tabla-categorias td {
+    padding: 20px 24px;
+    border-bottom: 1px solid #f0e6e6;
+    vertical-align: middle;
+    color: #333333;
+}
+
+/* Filas alternadas (Efecto Zebra) */
+.tabla-categorias tbody tr:nth-of-type(even) {
+    background-color: #faf6f6; /* Un tono crema/blanco muy suave de fondo */
+}
+
+/* Animación al pasar el mouse por una fila */
+.tabla-categorias tbody tr:hover {
+    background-color: #f3eded;
+    transition: background-color 0.2s ease;
+}
+
+/* Diseño de la primera columna (Icono + Texto) */
+.celda-principal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-tabla {
+    font-size: 1.4rem;
+    color: #891C20;
+    width: 30px;
+    text-align: center;
+}
+
+.celda-principal span {
+    font-weight: 600;
+    color: #891C20;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+/* Columna de descripción */
+.descripcion-tabla {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555555;
+    margin: 0;
+}
+
+/* Botón de ver catálogo adaptado a la celda */
+.btn-tabla {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #891C20;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap; /* Evita que el botón se rompa en dos renglones */
+}
+
+.btn-tabla:hover {
+    background-color: #e3d040; /* El color dorado del branding al hacer hover */
+    color: #333333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Adaptación para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .tabla-categorias th:nth-child(2), 
+    .tabla-categorias td:nth-child(2) {
+        display: none; /* Oculta la descripción en tablets/móviles para que no se amontone */
+    }
+}
+
+/* ============================================================
+   OPTIMIZACIÓN GLOBAL DE CATÁLOGOS (TÍTULOS, TARJETAS Y BOTONES)
+   ============================================================ */
+
+/* 1. Nuevo Estilo de Títulos Principales */
+.catalogo-header-container {
+    text-align: center;
+    padding: 35px 20px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.catalogo-main-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #891C20; /* Color corporativo de Confecciones Emilce */
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.catalogo-badge {
+    display: inline-block;
+    background-color: #891C20;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.catalogo-divider-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #891C20, #e3d040);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* 2. Cuadrícula Inteligente para los Productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Distribuye automáticamente en filas */
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 3. Tarjetas de Productos Compactas */
+.producto-card {
+    background: #891C20;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Evita que la tarjeta se estire innecesariamente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(137, 28, 32, 0.25);
+}
+
+.producto-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    min-height: auto;
+}
+
+/* Contenedor controlado para fotos compactas y simétricas */
+.producto-imagen-wrapper {
+    width: 100%;
+    height: 180px; /* Altura máxima ideal fija para la foto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08); /* Fondo sutil para resaltar el producto */
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.producto-imagen-wrapper img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Encaja la imagen proporcionalmente sin estirarla */
+}
+
+.producto-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    color: #f2dbdc;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+
+/* Destacado del Precio */
+.producto-precio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e3d040; /* Tono dorado premium */
+    margin-top: auto; /* Empuja el precio a la base uniformemente */
+    background: rgba(0, 0, 0, 0.15);
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+/* 4. Rediseño del Botón Volver de la Parte Inferior */
+.back-navigation-container {
+    text-align: center;
+    padding: 40px 20px 60px 20px;
+}
+
+.modern-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    color: #891C20;
+    border: 2px solid #891C20;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.modern-back-btn i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.modern-back-btn:hover {
+    background-color: #891C20;
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(137, 28, 32, 0.2);
+}
+
+.modern-back-btn:hover i {
+    transform: translateX(-4px); /* Animación interactiva en la flecha */
+}

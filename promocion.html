@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confecciones Emilce Multitienda</title>
+    <link rel="stylesheet" href="estilos.css">
+     <link rel="stylesheet" href="promociones.css">
+</head>
+<body>
+
+       <header>
+     <div class="logo">
+        <img src="imagenes/logitodelbuho.png" alt="Logo de Emilce">
+
+    <div class="texto-logo">
+        <h1>EMILCE</h1>
+        <p>CONFECCIONES</p>
+    </div>
+</div>
+
+        <input type="checkbox" id="menu-check" class="menu-checkbox">
+        
+        <label for="menu-check" class="menu-boton">
+            <span class="linea-barra"></span>
+            <span class="linea-barra"></span>
+            <span class="linea-barra"></span>
+        </label>
+
+        <nav class="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="productos.html">Productos</a>
+            <a href="promocion.html" class="activo">Promoción</a>
+            <a href="nosotros.html">Nosotros</a>
+    
+        </nav>
+    </header>
+
+    <section class="promo-albirroja">
+        <div class="promo-texto">
+            <h1>PROMOCIONES Y NOVEDADES</h1>
+            <p>
+                Descubrí nuestra nueva colección de remeras Albirrojas para niños y adultos.
+                Diseños exclusivos, calidad garantizada y el orgullo de vestir los colores de Paraguay.
+            </p>
+            <a href="#catalogo" class="boton-promo">Ver Catálogo</a>
+        </div>
+        <div class="promo-imagen">
+            <img src="imagenes/albirroja01.jpeg" alt="Remeras Albirrojas">
+        </div>
+    </section>
+
+    <section id="catalogo" class="catalogo-albirroja">
+        <div class="item">
+            <img src="imagenes/albirrojacapi.jpeg" alt="Modelo Capibara">
+            <h3>Modelo Capibara Albirroja</h3>
+            <p class="descripcion">Diseño infantil exclusivo con estampado divertido.</p>
+            <p class="precio">Gs. 60.000</p>
+        </div>
+
+        <div class="item">
+            <img src="imagenes/albirrojadiseño.jpeg" alt="Copa del Mundo">
+            <h3>Edición Copa del Mundo</h3>
+            <p class="descripcion">Modelo especial inspirado en la pasión mundialista.</p>
+            <p class="precio">Gs. 65.000</p>
+        </div>
+
+        <div class="item">
+            <img src="imagenes/albirroja.jpeg" alt="Modelo Oficial">
+            <h3>Modelo Oficial APF</h3>
+            <p class="descripcion">Ideal para apoyar a la Albirroja en cada partido.</p>
+            <p class="precio">Gs. 75.000</p>
+        </div>
+    </section>
+
+<!-- ============================================================ -->
+<!-- MAPA DE OFERTAS                                              -->
+<!-- ============================================================ -->
+<div style="text-align:center; padding: 20px;">
+
+    <div style="background: #f4f1ea; padding: 30px 20px; border-radius: 16px; text-align: center; margin: 20px auto; max-width: 900px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        
+        <div style="font-size: 3rem; margin-bottom: 5px;"></div>
+        <h2 style="color: #891C20; font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem;">🌍 Mapa de Ofertas</h2>
+        <div style="width: 80px; height: 3px; background: #e3d040; margin: 0 auto 15px auto;"></div>
+        <p style="color:#891C20; font-size: 1.2rem;">
+             Hacé clic sobre el área que deseas desplegar
+        </p>
+    </div>
+
+    <!-- IMAGEN DEL MAPA -->
+    <img src="imagenes/Mapa-ofertas.png" 
+         alt="Mapa de imagen interactivo" 
+         usemap="#mapa-ofertas" 
+         style="max-width: 90%; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+    
+    <!-- MAPA -->
+    <map name="mapa-ofertas">
+        <area shape="rect" coords="54,161,668,386" href="#cartucheras" alt="Cartucheras" title="Ver cartucheras">
+        <area shape="rect" coords="716,161,1350,393" href="#lapices" alt="Lápices" title="Ver lápices">
+        <area shape="rect" coords="53,409,631,698" href="#pinceles" alt="Pinceles" title="Ver pinceles">
+        <area shape="rect" coords="807,407,1371,719" href="#correctores" alt="Correctores" title="Ver correctores">
+    </map>
+
+</div>
+	
+    <div id="cartucheras" style="display: none; padding: 40px 20px; background: #f4f1ea; border-radius: 16px; margin: 30px auto; max-width: 900px; text-align: center;">
+        <h2 style="color:#891C20; font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">
+            📐 TIERRA DE CARTUCHERAS
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <img src="imagenes/i7.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i8.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+        </div>
+        <a href="#" class="btn-volver">← Volver</a>
+    </div>
+
+    <div id="lapices" style="display: none; padding: 40px 20px; background: #f4f1ea; border-radius: 16px; margin: 30px auto; max-width: 900px; text-align: center;">
+        <h2 style="color:#891C20; font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">
+            ✏️ VALLE DE LÁPICES
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <img src="imagenes/i10.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i11.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i12.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i13.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+        </div>
+        <a href="#" class="btn-volver">← Volver</a>
+    </div>
+
+    <div id="pinceles" style="display: none; padding: 40px 20px; background: #f4f1ea; border-radius: 16px; margin: 30px auto; max-width: 900px; text-align: center;">
+        <h2 style="color:#891C20; font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">
+            🖍️ CIUDAD DE PINCELES
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <img src="imagenes/i1.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i2.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i3.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i4.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+        </div>
+        <a href="#" class="btn-volver">← Volver</a>
+    </div>
+
+
+    <div id="correctores" style="display: none; padding: 40px 20px; background: #f4f1ea; border-radius: 16px; margin: 30px auto; max-width: 900px; text-align: center;">
+        <h2 style="color:#891C20; font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">
+            ➖ PLANICIE DE CORRECTORES
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <img src="imagenes/i5.png" width="400" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+            <img src="imagenes/i6.png" width="200" style="border-radius: 10px; background: #fff; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+        </div>
+        <a href="#" class="btn-volver">← Volver</a>
+    </div>
+
+</div>
+    <section class="beneficios">
+        <div class="beneficio">
+            <h3>⭐ Calidad Garantizada</h3>
+            <p>Telas cómodas y resistentes.</p>
+        </div>
+        <div class="beneficio">
+            <h3>🚚 Envíos</h3>
+            <p>Entregas a todo el país.</p>
+        </div>
+        <div class="beneficio">
+            <h3>❤️ Hecho con Pasión</h3>
+            <p>Confeccionado con orgullo paraguayo.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Confecciones Emilce Multitienda</p>
+    </footer>
+
+</body>
+</html>
